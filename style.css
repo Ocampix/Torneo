@@ -15,7 +15,7 @@ body{
 .encabezado_laterales{
     display: flex;
     height: 100%;
-    width: 20%;
+    width: 10%;
     background-image: url(./encabezado.webp);
     background-position: center;
     background-repeat: repeat-y;
@@ -24,7 +24,7 @@ body{
 .main {
     display: flex;
     height: 100%;
-    width: 65%;
+    width: 90%;
     flex-direction: column;
 }
 
@@ -33,21 +33,23 @@ body{
     height: 30%;
     width: 100%;
     background: linear-gradient(to right, #dc53f5, #521bcb);
+    justify-content: center;
+    align-items: center;
 }
     
 .encabezado{
     display: flex;
-    height: 100%;
-    width: 100%;
-    background-image: url(./IMG_20240314_160929.webp);
+    height: 90%;
+    width: 90%;
+   /* background-image: url(./encabezadotop.web);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: contain;*/
 }
 
 .descripcion{
     display: flex;
-    height: 10%;
+    height: 15%;
     width:100% ;
     background: linear-gradient(to right, #dc53f5, #521bcb);
     justify-content: center;
@@ -55,9 +57,16 @@ body{
     text-align: center;
     color: #fff;
     font-size: 1.2rem;
-    font-family: "Roboto Slab", serif;
-    font-style: 1.1rem;
     font-weight: bold;
+    padding: 0 2px 0 2px;
+}
+
+.descripcion p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 90%;
 }
 
 .modo_juego{
@@ -100,9 +109,9 @@ body{
 
 .grupo_img {
     display: flex;
-    width: 250px;
-    height: 250px;
-    background-image: url(./source/1710447558787.webp);
+    width: 130px;
+    height: 150px;
+    background-image: url(./1710447558787.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -121,6 +130,7 @@ body{
     justify-content: center;
     align-items: center;
     position: relative;
+    border: 1px solid #fff;
 }
 .jugador{
     display: flex;
@@ -155,3 +165,16 @@ body{
     color: #000;
     font-weight: bold;
   }
+  
+  
+  
+/*     vista movil   */
+
+@media (max-width:394px){
+    .descripcion p{
+        font-size: 1rem;
+    }
+    .div_encabezado{
+        height: 15%;
+    }
+}
