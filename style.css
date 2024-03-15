@@ -16,7 +16,7 @@ body{
     display: flex;
     height: 100%;
     width: 20%;
-    background-image: url(./source/encabezado.webp);
+    background-image: url(./encabezado.webp);
     background-position: center;
     background-repeat: repeat-y;
 }
@@ -39,7 +39,7 @@ body{
     display: flex;
     height: 100%;
     width: 100%;
-    background-image: url(./source/IMG_20240314_160929.webp);
+    background-image: url(./IMG_20240314_160929.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
