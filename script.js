@@ -1,21 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
   const modales = document.querySelectorAll('.modal');
+  let jugadores = document.querySelectorAll('.jugador')
   
-  modales.forEach(function(modal) {
-    modal.addEventListener('click', function(event) {
-      event.stopPropagation(); // Evita que el clic en el modal cierre el mismo
+
+  jugadores.forEach(element => {
+    element.addEventListener('click', (e) => {
+        // Oculta todos los modales
+        modales.forEach(modal => {
+            modal.classList.remove('modal-activado');
+        });
+
+        // Muestra el modal del elemento clicado
+        e.target.children[0].classList.add('modal-activado');
+        console.log('agregado');
     });
-  });
-  
-  document.addEventListener('click', function(event) {
-    const clickedElement = event.target;
-    const activator = clickedElement.closest('.elemento'); // Obtén el elemento que activa el modal
-    
-    if (!activator) {
-      modales.forEach(function(modal) {
-        modal.style.display = 'none'; // Oculta todos los modales si se hace clic fuera de ellos
-      });
-    }
-  });
 });
+});
+
 
