@@ -209,7 +209,7 @@ body {
 }
 
 .jugador {
-    display: none;
+    display: flex;
     width: 90%;
     height: auto;
     color: #fff;
@@ -387,6 +387,15 @@ body {
 
 
 /*     vista movil   */
+
+@media (max-width:1450px) {
+    .descripcion{
+        font-size: 1.4rem;
+    }
+    .descripcion p{
+       width: 100%;
+    }
+}
 
 @media (max-width:1298px) {
     .descripcion{
