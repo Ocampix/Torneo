@@ -16,5 +16,23 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 });
-
+// Obtener el modal y el botón para abrirlo
+var modal = document.getElementById("openModal");
+var btn = document.getElementById("openButton");
+// Obtener el elemento de cierre (x)
+var span = document.getElementsByClassName("close")[0];
+// Cuando el usuario hace clic en el botón, abrir el modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+// Cuando el usuario hace clic en (x), cerrar el modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+// Cuando el usuario hace clic fuera del modal, cerrarlo
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 
