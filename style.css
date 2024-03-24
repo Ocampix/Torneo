@@ -1,519 +1,1068 @@
 
+
 @import url('https://fonts.googleapis.com/css2?family=Arbutus&family=Cedarville+Cursive&family=Lugrasimo&family=Roboto+Slab:wght@100..900&family=Rubik+Dirt&display=swap');
 
+
+
 * {
+
     padding: 0;
+
     margin: 0;
+
 }
+
+
 
 body {
+
     height: 100vh;
+
     width: 100%;
+
     display: flex;
+
     flex-direction: column;
+
     font-family: "Roboto Slab", serif;
+
     font-weight: 700;
+
 }
+
+
 
 .encabezadotop {
+
     display: flex;
+
     height: 40%;
+
     justify-content: center;
+
     align-items: center;
+
     flex-direction: row;
+
     width: 100%;
+
     background-image: url(./IMG_20240319_115507.webp);
+
 }
+
+
 
 .encabezado_laterales {
+
     display: flex;
+
     height: 100%;
+
     width: 35%;
+
     /* background-image: url(./IMG_20240319_115507.webp); */
+
     background-position: center;
+
     background-repeat: no-repeat;
+
     background-size: cover;
+
 }
+
+
 
 .main {
+
     display: flex;
+
     height: 100%;
+
     width: 80%;
+
     flex-direction: column;
+
 }
+
+
 
 .div_encabezado {
+
     display: flex;
+
     height: 50%;
+
     width: 100%;
+
     background: transparent;
+
     justify-content: center;
+
     align-items: center;
 
+
+
 }
+
+
 
 .encabezado {
+
     display: flex;
+
     height: 90%;
+
     width: 100%;
+
 }
+
+
 
 .descripcion {
-    display: flex;
+
+    display: none;
+
     height: 30%;
+
     width: 100%;
+
     background: transparent;
+
     justify-content: center;
+
     align-items: center;
+
     text-align: center;
+
     color: #f24def;
+
     font-size: 2rem;
+
     font-weight: bold;
+
     padding: 0 2px 0 2px;
+
     
+
 }
+
+
 
 .descripcion p {
+
     display: flex;
+
     height: 100%;
+
     width: 90%;
+
     
+
 }
+
+
 
 .modo_juego {
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
-    height: 20%;
+
+    min-height:80px;
+
     width: 100%;
+
     background: transparent;
+
     color: aqua;
+
     font-weight: bold;
+
     text-transform: uppercase;
+
     font-size: 2rem;
+
     animation: cambio 7s ease infinite;
+
 }
+
+
 
 @keyframes cambio {
+
   0% {
+
        font-family: "Roboto Slab", serif;
+
    }
+
    20% {
+
            font-family: "Rubik Dirt", system-ui;
+
            font-weight: 400;
+
          
+
    }
+
    40%{
+
         font-family: "Cedarville Cursive", cursive;
+
         font-weight: 400;
+
       
+
    }
+
    60% {
+
            font-family: "Arbutus", serif;
+
    }
+
    80%{
+
         font-family: "Lugrasimo", cursive;
+
         font-weight: 400;  
+
    }
+
    100% {
+
        font-family: "Roboto Slab", serif;
+
    }  
+
 /*     0% {
+
        color: red;
+
    }
+
    25% {
+
           color: purple;
+
          
+
    }
+
    50% {
+
           color: green; 
+
    }
+
    100% {
+
        color: aqua;
+
    }  */
+
  }
 
+
+
 .lista_grupos {
+
     display: flex;
+
     flex-wrap: wrap;
+
     height: 100%;
+
     width: 100%;
+
     overflow-y: scroll;
+
     background-image: url(./542adba8abe9204818ad933166ab5154.webp);
+
     background-position: center;
+
     background-repeat: repeat;
+
     align-items: center;
+
     justify-content: center;
+
 }
+
+
 
 .etapa {
+
     display: flex;
+
     height: auto;
+
     min-height: 300px;
+
     width: 100%;
+
     flex-wrap: wrap;
+
     /* background-color: red; */
+
     justify-content: center;
+
     align-items: center;
+
     margin-bottom: 30px;
+
     border-bottom: 1px solid #c0c0c0;
+
     padding: 5px;
+
 }
+
+
 
 .info{
+
     color: #fff;
+
     font-size: 1.5rem;
 
+
+
 }
+
+
 
 .nombre_grupo {
+
     display: flex;
+
     text-align: center;
+
     align-items: center;
+
     justify-content: center;
+
     width: 90%;
+
     height: 10%;
+
     color: #fff;
+
     font-weight: bold;
+
     font-size: 1.4rem;
+
     padding: 4px;
+
 }
+
+
 
 .grupo_img {
+
     display: flex;
+
     width: auto;
+
     min-width: 300px;
+
     height: auto;
+
     background-image: url(./1710447558787.webp);
+
     background-position: center;
+
     background-repeat: no-repeat;
+
     background-size: cover;
+
     margin: 10px;
+
     text-transform: capitalize;
+
     border-radius: 7px;
+
 }
+
+
 
 .grupo {
+
     display: flex;
+
     flex-direction: column;
+
     height: 100%;
+
     width: 100%;
+
     background-color: rgba(0, 0, 0, 0.61);
+
     backdrop-filter: blur(1px);
+
     border-radius: 7px;
+
     justify-content: center;
+
     align-items: center;
+
     position: relative;
+
     border: 1px solid #fff;
 
+
+
 }
+
+
 
 .jugador {
+
     display: flex;
+
     width: 90%;
+
     height: auto;
+
     color: #fff;
+
     border-bottom: 1px solid #fff;
+
     padding-left: 7px;
+
     margin: 2px 0 2px 0;
+
     cursor: pointer;
+
     transition: all .5s ease;
+
     position: relative;
+
     font-size: 1.3rem;
+
+    justify-content: space-between;
+
 }
+
+
+
+.punto{
+
+    color: green;
+
+}
+
+
 
 .jugador:hover {
+
     background-color: rgba(255, 255, 255, 0.61);
+
     color: #0e0e0e;
+
     font-size: 1.1rem;
+
     font-weight: bold;
+
 }
+
+
 
 .eliminatorias{
+
     display: none;
+
     height: auto;
+
     width: 100%;
+
     flex-wrap: wrap;
+
     justify-content: center;
+
     align-items: center;
+
     border-bottom: 1px solid #c0c0c0;
+
     padding: 5px;
+
 }
+
 /* .jugador:hover .modal {
+
     display: block;
+
 } */
+
 #openButton{
+
     position: absolute;
+
     cursor: pointer;
+
     top: 5px;
+
     left: 5px;
+
 }
+
+
 
 #openButton img {
+
     display: flex;
+
     width: 30px;
+
     height: 30px;
+
 }
+
+
 
 .open-modal {
+
     display: none; /* Ocultar modal por defecto */
+
     position: fixed;
+
     z-index: 1;
+
     left: 0;
+
     top: 0;
+
     width: 100%;
+
     height: 100%;
+
     overflow: auto;
+
     background-color: rgba(0,0,0,0.5);
+
   }
+
   
+
   .modal-content {
+
     background-color: #fefefe;
+
     margin: 15% auto;
+
     padding: 20px;
+
     border: 1px solid #888;
+
     width: 80%;
+
     max-width: 600px;
+
   }
+
   
+
   .modal-content h2{
+
      margin-bottom: 15px;
+
   }
+
+
 
   .modal-content p{
+
     font-weight: 400;
+
   } 
-  
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
+
   
 
-.modal {
-    display: none;
-    position: absolute;
-    z-index: 2;
-    top: -35px;
-    right: 0px;
-    /* width: 123px; */
-    height: 30px;
-    background-color: rgb(255 253 253 / 81%);
-    color: #000;
+  .close {
+
+    color: #aaa;
+
+    float: right;
+
+    font-size: 28px;
+
     font-weight: bold;
+
+  }
+
+  
+
+  .close:hover,
+
+  .close:focus {
+
+    color: black;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+  }
+
+  
+
+
+
+.modal {
+
+    display: none;
+
+    position: absolute;
+
+    z-index: 2;
+
+    top: -35px;
+
+    right: 0px;
+
+    /* width: 123px; */
+
+    height: 30px;
+
+    background-color: rgb(255 253 253 / 81%);
+
+    color: #000;
+
+    font-weight: bold;
+
 }
+
+
 
 /* Clase de activasion de los "modales" */
 
+
+
 .modal-activado {
 
+
+
     display: block;
+
 }
+
+
+
+
 
 
 
 .finalizado {
-    opacity: 0.3;
+
+    opacity: 0.5;
+
 }
+
+
 
 .ganador {
+
     color: #1bcb56;
+
     border-bottom: 1px solid #0fdf54;
+
 }
+
 .jugador_ganador{
+
     display: flex;
+
     align-items: center;
+
     justify-content: center;
+
     font-size: 2.5rem;
+
     font-weight: bold;
+
     color: #06eaf0;
+
     padding: 15px;
+
 }
+
 .campeon{
+
     color: #f0e606 ;
+
 }
-.finalista{
-    display: none;
-    height: auto;
-    width: 100%;
+
+
+
+.categoria{
+
     padding: 5px;
-    justify-content: center;
-    align-items: center;
+
+    border-bottom: 3px solid #fff;
+
 }
+
+
+
+.finalista{
+
+    display: flex;
+
+    height: auto;
+
+    width: 100%;
+
+    padding: 5px;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-direction: column;
+
+    border-bottom: 1px solid #c0c0c0;
+
+}
+
+
 
 .card {
+
     overflow: visible;
+
     width: 300px;
+
     height: 254px;
-  }
-  
-  .content {
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: transform 300ms;
-    box-shadow: 0px 0px 10px 1px #000000ee;
-    border-radius: 5px;
+
+    margin-top: 10px;
+
+    margin-bottom: 10px;
+
   }
 
+  
+
+  .content {
+
+    width: 100%;
+
+    height: 100%;
+
+    transform-style: preserve-3d;
+
+    transition: transform 300ms;
+
+    box-shadow: 0px 0px 10px 1px #000000ee;
+
+    border-radius: 5px;
+
+  }
+
+
+
   .front, .back {
+
     background-image: url(./IMG_20240319_115507.webp);
+
     background-size: cover;
+
     background-position: center;
+
     background-repeat: no-repeat;
+
     position: absolute;
+
     width: 100%;
+
     height: 100%;
+
     backface-visibility: hidden;
+
     -webkit-backface-visibility: hidden;
+
     border-radius: 5px;
+
     overflow: hidden;
+
   }
+
   
+
   .back {
+
     width: 100%;
+
     height: 100%;
+
     justify-content: center;
+
     display: flex;
+
     align-items: center;
+
     overflow: hidden;
+
   }
+
   
+
   .back::before {
+
     position: absolute;
+
     content: ' ';
+
     display: block;
+
     width: 160px;
+
     height: 160%;
+
     background: linear-gradient(90deg, transparent, #ff9966, #ff9966, #ff9966, #ff9966, transparent);
+
     animation: rotation_481 5000ms infinite linear;
+
   }
+
   
+
   .back-content {
+
     position: absolute;
+
     width: 99%;
+
     height: 99%;
+
     background-image: url(./1710447558787.webp);
+
     background-position: center;
+
     background-repeat: no-repeat;
+
     background-size: cover;
+
     border-radius: 5px;
+
     display: flex;
+
     flex-direction: column;
+
     justify-content: center;
+
     align-items: center;
+
     gap: 30px;
+
     color: #f0e606;
+
     font-size: 1.5rem;
+
     justify-content: space-between;
+
   }
+
   
+
   .card:hover .content {
+
     transform: rotateY(180deg);
+
   }
+
   
+
   @keyframes rotation_481 {
+
     0% {
+
       transform: rotateZ(0deg);
+
     }
+
   
+
     0% {
+
       transform: rotateZ(360deg);
+
     }
+
   }
+
   
+
   .front {
+
     display: flex;
+
     transform: rotateY(180deg);
+
     color: #f0e606;
+
     justify-content: center;
+
     align-items: center;
+
     font-size: 1.2rem;
+
 }
+
+
+
+
 
 
 
 /*     vista movil   */
 
+
+
 @media (max-width:1450px) {
+
     .descripcion{
+
         font-size: 1.4rem;
+
     }
+
     .descripcion p{
+
        width: 100%;
+
     }
+
 }
 
+
+
 @media (max-width:1298px) {
+
     .descripcion{
+
         font-size: 1.2rem;
+
     }
+
 }
+
 @media (max-width:1086px) {
+
     .descripcion {
+
         font-size: 1rem;
+
     }
+
 }
+
 @media (max-width:860px) {
+
     .modo_juego{
+
         font-size: 1.6rem;
+
     }
+
   
+
 }
+
 @media (max-width:800px) {
+
     .descripcion{
+
         font-size: 1rem;
+
     }
+
     .encabezado_laterales{
+
         width: 25%;
+
     }
+
 }
+
 @media (max-width:680px) {
+
     .descripcion {
+
         font-size: 15px;
+
         backdrop-filter: blur(2px);
+
         
+
     }
+
     .encabezado_laterales{
+
         width: 15%;
+
     }
+
 }
+
 @media (max-width:550px) {
+
     .encabezado_laterales{
+
         display: none;
+
     }
+
     .main{
+
         width: 100%;
+
     }
+
     .info{
+
         font-size: 1rem;
+
     }
+
 }
+
 @media (max-width:440px) {
+
     .descripcion p{
+
         width: 100%;
+
     }
+
 }
+
 @media (max-width:394px) {
+
     .grupo_img {
+
        width: auto;
+
        height: auto;
+
     }
+
     .modo_juego{
+
         font-size: 1.3rem;
+
     }
+
 }
+
 @media (max-width:320px) {
+
     .descripcion {
+
         font-size: 13px;
+
     }
+
 }
+
